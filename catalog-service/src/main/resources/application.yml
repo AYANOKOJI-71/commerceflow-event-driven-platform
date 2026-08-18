@@ -1,0 +1,9 @@
+server:
+  port: ${SERVER_PORT:4404}
+spring:
+  data:
+    redis:
+      host: ${COMMERCE_REDIS_HOST:localhost}
+      port: ${COMMERCE_REDIS_PORT:6379}
+management:
+  endpoints.web.exposure.include: health,info,prometheus

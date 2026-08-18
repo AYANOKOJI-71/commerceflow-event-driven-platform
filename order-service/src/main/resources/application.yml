@@ -1,0 +1,17 @@
+server:
+  port: ${COMMERCE_ORDER_PORT:4400}
+commerce:
+  store:
+    mode: ${COMMERCE_STORE_MODE:memory}
+  messaging:
+    mode: ${COMMERCE_MESSAGING_MODE:local}
+  allowed-origin: ${COMMERCE_ALLOWED_ORIGIN:http://localhost:5180}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      probes:
+        enabled: true

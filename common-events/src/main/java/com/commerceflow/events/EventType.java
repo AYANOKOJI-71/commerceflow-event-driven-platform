@@ -1,0 +1,10 @@
+package com.commerceflow.events;
+
+public enum EventType {
+  ORDER_PLACED,
+  INVENTORY_RESERVED,
+  PAYMENT_AUTHORIZED,
+  ORDER_COMPLETED,
+  ORDER_REJECTED,
+  NOTIFICATION_REQUESTED
+}

@@ -1,0 +1,5 @@
+**/target/
+operations-web/node_modules/
+operations-web/dist/
+.env
+.DS_Store
