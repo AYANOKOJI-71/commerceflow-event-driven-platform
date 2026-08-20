@@ -1,6 +1,6 @@
 # CommerceFlow — Event-Driven E-Commerce Microservices Platform
 
-CommerceFlow is an interview-ready **Java 21 / Spring Boot** microservices laboratory that demonstrates asynchronous order processing, versioned Kafka events, service-owned persistence, Redis-backed catalog caching, and Kubernetes deployment intent. It contains no production orders, customer identities, payment credentials, or external payment integration.
+CommerceFlow is a **Java 21 / Spring Boot** microservices laboratory that demonstrates asynchronous order processing, versioned Kafka events, service-owned persistence, Redis-backed catalog caching, and Kubernetes deployment intent. It contains no production orders, customer identities, payment credentials, or external payment integration.
 
 The live review path is intentionally deterministic: a safe synthetic checkout produces a five-step saga trail that can be inspected in the React operations workspace. The full container topology switches the same boundaries to Kafka, PostgreSQL, and Redis.
 
@@ -59,6 +59,3 @@ docs/                 Architecture, security, and demo guidance
 
 GitHub Actions executes the Java service tests plus TypeScript checks, frontend unit tests, and a production web build for every pull request and push to `main`. The workflow uses Temurin Java 21 and Node 22.
 
-## Interview Discussion Prompts
-
-CommerceFlow is designed to support a detailed discussion of event versioning, idempotency, saga coordination, transactional-outbox adoption, read-cache ownership, retry and dead-letter policy, service health probes, autoscaling, and the intentional distinction between a local deterministic mode and a production integration mode.
